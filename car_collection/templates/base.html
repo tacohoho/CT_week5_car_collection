@@ -12,9 +12,9 @@
 </head>
 <body>
     <nav class="ct-nav">
-        <div>
+        <!-- <div>
             <img src="../static/images/Coding Drones Logo.png" alt="Logo">
-        </div>
+        </div> -->
         <!-- Nav items begin here -->
         <div>
             <ul id="horizontal-list">
@@ -36,11 +36,11 @@
                 <a href="">
                     <li>Support</li>
                 </a>
-                <a href="">
-                    <li>Blog</li>
+                <a href="{{ url_for('auth.signup') }}">
+                    <li>Sign Up</li>
                 </a>
-                <a href="">
-                    <li>Log in</li>
+                <a href="{{ url_for('auth.signin') }}">
+                    <li>Sign in</li>
                 </a>
             </ul>
         </div>
