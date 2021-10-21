@@ -4,8 +4,8 @@ from datetime import datetime
 import uuid
 
 # Adding Flask Security for Passwords
-from werkzeug.security import generate_password_hash
-
+from werkzeug.security import generate_password_hash, check_password_hash
+from flask_login import LoginManager, UserMixin
 # creates hex tokens for our API access
 import secrets
 
